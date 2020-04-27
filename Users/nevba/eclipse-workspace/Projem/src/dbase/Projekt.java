@@ -14,7 +14,8 @@ public class Projekt {
 
 		try {
 
-			
+			//Hocam sonunda oldu
+			System.out.println("asd");
 			Connection myConn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/projekt?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey","root","1234");
 			Statement myStat = (Statement) myConn.createStatement();
 			ResultSet myRs =myStat.executeQuery("select* from mitarbeiter");
